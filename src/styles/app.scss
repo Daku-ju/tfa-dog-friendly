@@ -1,2 +1,14 @@
 @import 'utils/variables';
 @import 'components/type';
+
+@font-face {
+    font-family: "PP Fuji";
+    src: url("../assets/fonts/PPFuji-Regular.otf") format("otf");
+   }
+
+body{
+    font-family: 'Abel', sans-serif;
+}
+title{
+    font-family: 'PP Fuji' ;
+}
