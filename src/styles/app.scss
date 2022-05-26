@@ -3,12 +3,29 @@
 
 @font-face {
     font-family: "PP Fuji";
+    font-style: normal;
     src: url("../assets/fonts/PPFuji-Regular.otf") format("otf");
    }
 
 body{
     font-family: 'Abel', sans-serif;
+    margin: 0px;
 }
-title{
-    font-family: 'PP Fuji' ;
+.title{
+    font-family: "PP Fuji", normal ;
+    color: black;
+}
+
+main{
+    margin-left: 26px;
+    margin-right: 26px;
+}
+.title--big{
+    font-size: 53.75px;
+    line-height: 59px;
+}
+
+.title--nrm{
+    font-size: 44.79px;
+    line-height: 53.8px;
 }
