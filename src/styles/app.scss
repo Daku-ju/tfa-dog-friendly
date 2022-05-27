@@ -33,6 +33,11 @@ main{
     line-height: 53.8px;
 }
 
+.title-little{
+    font-size: 31px;
+    margin-bottom: 20px;
+}
+
 .link{
     background-color: #51301F;
     color: #FFF0A3;
@@ -50,8 +55,9 @@ main{
 .text{
     font-size: 18px;
     line-height: 24px;
+    margin: 0px;
 }
-img{
+.img{
     margin-top: 78px;
     max-width: 300px;
     display: block;
@@ -69,6 +75,14 @@ img{
     margin-right: auto;
 }
 
+.img--testi{
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 75px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
 
 .block{
     display:flex ;
@@ -79,4 +93,10 @@ img{
 .block1{
     height: 100vh;
     background-color: #FFF0A3;
+}
+
+.testimony{
+    background-color: #FFF0A3;
+    padding: 20px;
+    margin: 20px;
 }
