@@ -106,5 +106,28 @@ main{
 @media (min-width :750px ){
     .block{
         flex-direction: row;
+        justify-content: space-between;
+        padding-top: 110px;
+        padding-bottom: 110px;
     }
+
+    main{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .block--text{
+        max-width: 550px;
+    }
+    .img{
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 500px;
+    }
+    .div{
+        display: flex;
+    }
+    .testimony{
+        max-width: 350px;
+    }
+
 }
