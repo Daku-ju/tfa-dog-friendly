@@ -67,12 +67,14 @@ main{
 }
 
 
-.img--landing{
+.img__landing{
     max-width: 300px;
     object-fit: contain;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .img--testi{
@@ -101,6 +103,20 @@ main{
     margin: 20px;
 }
 
+.img__landing--none{
+    display: none;
+}
+
+
+
+
+@media (min-width :750px){
+    main{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
 
 
 @media (min-width :1150px ){
@@ -121,13 +137,42 @@ main{
     .img{
         margin-left: 0px;
         margin-right: 0px;
-        max-width: 500px;
+        max-width: 400px;
     }
     .div{
         display: flex;
     }
     .testimony{
-        max-width: 30px;
+        max-width: 500px;
+    }
+
+    .img__landing--none{
+        display: block;
+    }
+    .text--landing{
+        max-width: 450px;
+    }
+    .block1--landing{
+        display: flex;
+        flex-direction: row-reverse;  
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .img__landing{
+        max-width: 70%;
+        object-fit: contain;
+        display: block;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+    .nav--landing{
+        position: absolute;
+    }
+    .block1--landing{
+        position: relative;
+        top: 4%;
     }
 
 }
