@@ -11,21 +11,26 @@ body{
     font-family: 'Abel', sans-serif;
     margin: 0px;
 }
-.title{
-    font-family: "PP Fuji", normal ;
-    color: black;
-    margin-bottom: 39px;
-    margin-top: 0px;
-}
 
 main{
     margin-left: 26px;
     margin-right: 26px;
 }
+
+.title{
+    font-family: "PP Fuji", normal ;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
 .title--big{
     font-size: 53.75px;
     line-height: 59px;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .title--nrm{
@@ -35,7 +40,6 @@ main{
 
 .title-little{
     font-size: 31px;
-    margin-bottom: 20px;
 }
 
 .link{
@@ -56,40 +60,46 @@ main{
     font-size: 18px;
     line-height: 24px;
     margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+//image
 .img{
-    margin-top: 78px;
+    padding-top: 20px;
     max-width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 39px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
-
 
 .img__landing{
-    max-width: 300px;
     object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+
 }
 
 .img--testi{
     max-width: 70px;
     max-height: 70px;
-    border-radius: 75px;
+    border-radius: 50%;
     margin-top: 0px;
-    margin-bottom: 20px;
+}
+
+.img__landing--none{
+    display: none;
 }
 
 
+//block de texte
 .block{
     display:flex ;
     flex-direction: column;
     align-items: center;
+    padding-top: 58px;
+    padding-bottom: 58px;
 }
 
 .block1{
@@ -103,8 +113,15 @@ main{
     margin: 20px;
 }
 
-.img__landing--none{
-    display: none;
+.block1--landing{
+    position: relative;
+    top: 26%;
+}
+
+.nav--landing{
+    position: absolute;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -163,8 +180,6 @@ main{
         object-fit: contain;
         display: block;
         margin-left: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
         
     }
     .nav--landing{
