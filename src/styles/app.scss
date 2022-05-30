@@ -28,8 +28,8 @@ main{
 
 .title--big{
     font-size: 53.75px;
-    line-height: 59px;
     text-align: center;
+    line-height: 59px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -112,12 +112,12 @@ main{
     background-color: #FFF0A3;
     padding: 20px;
     margin: 20px;
-    display: inline;
+
 }
 
 .block--slogan{
     position: relative;
-    top: 26%;
+    top: 12%;
 }
 
 .nav--landing{
@@ -128,6 +128,8 @@ main{
 
 .logo--download{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo{
@@ -154,7 +156,9 @@ main{
     padding: 10px;
 }
 
-/*
+
+
+
 
 @media (min-width :750px){
     main{
@@ -164,11 +168,39 @@ main{
 }
 
 @media (min-width :1150px){
+
+    
+    .title--big{
+        font-size: 85px;
+        line-height: 90px;
+        text-align: left;
+    }
+    
+    .title--nrm{
+        font-size: 55px;
+        line-height: 64px;
+    }
+    
+    .title-little{
+        font-size: 43.95px;
+    }
     .block{
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         padding-top: 110px;
         padding-bottom: 110px;
+    }
+    .block--feature{
+        flex-direction: row;
+    }
+
+    .block--testimony{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .testimony{
+        display: flex;
+        flex-direction: row;
     }
 
     main{
@@ -178,16 +210,39 @@ main{
 
     .block--text{
         max-width: 550px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .img{
         margin-left: 0px;
         margin-right: 0px;
-        max-width: 300px;
+        max-width: 400px;
     }
 
-    .block--text{
-        padding-left: 20px;
+    .img__landing--none{
+        display: block;
+    }
+    .text--landing{
+        max-width: 500px;
+        margin-left: 150px;
+    }
+    .block--slogan{
+        display: flex;
+        flex-direction: row-reverse;  
+        justify-content: space-between;
+        align-items: center; 
+        position: relative;
+        top: 2%;
+    }
+    .block--download{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .logo--download{
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -205,19 +260,10 @@ main{
         max-width: 500px;
     }
 
-    .img__landing--none{
-        display: block;
-    }
     .text--landing{
-        max-width: 450px;
-        margin-left: 65px;
+        margin-left: 200px;
     }
     .block--slogan{
-        display: flex;
-        flex-direction: row-reverse;  
-        justify-content: space-between;
-        align-items: center; 
-        position: relative;
         top: 4%;
     }
     .img__landing{
@@ -236,10 +282,7 @@ main{
         padding: 0px;
     }
 
-    .block--download{
-        align-items: flex-start;
-        flex-direction: column;
-    }
+
     .block--testimony{
         flex-direction: column;
         align-items: flex-start
@@ -248,4 +291,4 @@ main{
     .testimony{
         display: flex;
     }
-}*/
+}
