@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 var images = document.querySelectorAll('.img--animation');
 for (let image of images){
     gsap.from(image,{
-        translateX: 400,
+        opacity:0,
         duration: 0.5, 
         ease: "power 4",
         scrollTrigger:{ 
@@ -16,6 +16,17 @@ for (let image of images){
  })
 
 }
+
+gsap.from (".block--download",{
+    x : -900,
+    duration: 0.5, 
+    ease: "power 4",
+    scrollTrigger:{ 
+        trigger: ".testimony--com3",
+        start: "bottom center",       
+ }
+
+})
 
 
 

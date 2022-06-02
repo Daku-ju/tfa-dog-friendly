@@ -57,9 +57,23 @@ main{
     margin-left: 10px;
     margin-right: 10px;
     font-size: 21.60px;
+    position: relative;
+
 
     font-family: "PP Fuji", normal; 
 }
+.link::after{
+    background-repeat: no-repeat;
+    background-size: contain;
+    content : "";
+    position: absolute;
+    background-image: url(../assets/images/patte.png);
+    width: 19px;
+    height: 18.65px;
+    right: 8%;
+    top: 36%;
+}
+
 
 .text{
     font-size: 18px;
@@ -156,6 +170,7 @@ main{
 
 .link--footer{
     padding: 10px;
+    padding-right: 40px;
 }
 
 .logo--download{
