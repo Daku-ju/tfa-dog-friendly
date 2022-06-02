@@ -29,7 +29,7 @@ gsap.from (".block--download",{
  }
 
 })
-
+/*
 const buttons = document.querySelectorAll('.logo--download')
 for (let button of buttons){
     button.addEventListener("hover",()=>{
@@ -42,8 +42,8 @@ for (let button of buttons){
         button.addEventListener("mouseleave", () => hover.reverse());
     })
 }
+*/
 
-/*
 gsap.utils.toArray(".logo--download").forEach(img => {
     let hover = gsap.to(img, {
         scale: 1.12, 
