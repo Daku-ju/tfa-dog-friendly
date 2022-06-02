@@ -150,6 +150,9 @@ main{
 
 .logo{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 //footer
@@ -173,11 +176,6 @@ main{
     padding-right: 40px;
 }
 
-.logo--download{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .logo--dog{
     padding: 20px;
 }
@@ -263,7 +261,7 @@ main{
         flex-direction: column;
     }
 
-    .logo--download{
+    .logo{
         flex-direction: row;
         align-items: center;
     }
