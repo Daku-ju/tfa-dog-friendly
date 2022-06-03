@@ -29,6 +29,23 @@ gsap.from (".block--download",{
  }
 
 })
+gsap.from (".graph--anim",{
+    opacity:0,
+    y: 300,
+    duration: 0.5,
+   ease: "power 4",
+   scrollTrigger:{ 
+       trigger: ".graph",
+       start: "top center",       
+}
+
+})
+
+
+
+
+
+
 /*
 const buttons = document.querySelectorAll('.logo--download')
 for (let button of buttons){
