@@ -43,8 +43,11 @@ main{
     line-height: 53.8px;
 }
 
-.title-little{
-    font-size: 31px;
+.title--little{
+    font-size: 37.32px;
+}
+.title--thin{
+    font-size: 31.10px;
 }
 
 .link{
@@ -81,6 +84,10 @@ main{
     margin: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.text--thinpad{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 //image
@@ -202,7 +209,7 @@ main{
         line-height: 64px;
     }
     
-    .title-little{
+    .title--little{
         font-size: 43.95px;
     }
     .block{
