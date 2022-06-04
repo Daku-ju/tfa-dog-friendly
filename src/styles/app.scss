@@ -51,10 +51,10 @@ main{
 }
 
 .button{
-    background-color: #51301F;
+    background-color: #753D00;
     color: #FFF0A3;
     padding: 10px;
-    width: 20%;
+    margin: 10px;
     text-align: center;
     border-radius: 10px;
     display: block;
@@ -270,8 +270,6 @@ main{
 
     .block--text{
         max-width: 550px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .img{
@@ -303,6 +301,10 @@ main{
     .logo{
         flex-direction: row;
         align-items: center;
+    }
+    .list{
+        display: flex;
+        justify-content: flex-start;
     }
 
 }
