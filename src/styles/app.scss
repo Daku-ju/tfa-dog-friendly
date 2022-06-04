@@ -126,10 +126,13 @@ main{
 
 
 //block de texte
-.block{
+.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp{
     display:flex ;
     flex-direction:column-reverse;
     align-items: center;
+}
+
+.block{
     padding-top: 58px;
     padding-bottom: 58px;
 }
@@ -251,7 +254,7 @@ main{
     .title--little{
         font-size: 43.95px;
     }
-    .block{
+    .block--slogan, .block--advantage, .block--download,.block--intro, .block--mvp{
         flex-direction: row-reverse;
         justify-content: space-between;
         padding-top: 110px;
@@ -276,13 +279,13 @@ main{
     }
 
     .block--text{
-        max-width: 550px;
+        max-width: 450px;
     }
 
     .img{
         margin-left: 0px;
         margin-right: 0px;
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .img__landing--none{
@@ -351,7 +354,9 @@ main{
         top: 2%;
         padding: 0px;
     }
-
+    .block--text{
+        max-width: 550px;
+    }
 
     .block--testimony{
         flex-direction: column;
