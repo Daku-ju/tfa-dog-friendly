@@ -128,7 +128,7 @@ main{
 //block de texte
 .block{
     display:flex ;
-    flex-direction: column;
+    flex-direction:column-reverse;
     align-items: center;
     padding-top: 58px;
     padding-bottom: 58px;
@@ -148,7 +148,7 @@ main{
 
 .block--slogan{
     position: relative;
-    top: 13%;
+    top: 9%;
 }
 
 .block--testimony{
