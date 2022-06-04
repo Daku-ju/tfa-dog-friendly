@@ -38,7 +38,7 @@ for (let graph of graphs){
        ease: "power 4",
        scrollTrigger:{ 
            trigger: graph,
-           start: "top top",       
+           start: "top bottom",       
     }
     
     })

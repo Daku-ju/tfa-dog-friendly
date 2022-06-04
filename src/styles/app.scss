@@ -26,8 +26,8 @@ main{
 .title{
     font-family: "PP Fuji", normal;
     color: black;
-    padding-top: 20px;
-    padding-bottom: 31px;
+    padding-top: 31px;
+    padding-bottom: 21px;
     margin: 0px;
 }
 
@@ -364,9 +364,6 @@ main{
         top: -1%;
         padding: 0px;
     }
-    .block--text{
-        max-width: 550px;
-    }
 
     .block--testimony{
         flex-direction: column;
@@ -384,5 +381,9 @@ main{
         margin-left: auto;
         margin-right: auto;
     }
+    .block--text{
+        max-width: 550px;
+    }
+
 }
 
