@@ -42,25 +42,6 @@ gsap.from (".graph--anim",{
 })
 
 
-
-
-
-
-/*
-const buttons = document.querySelectorAll('.logo--download')
-for (let button of buttons){
-    button.addEventListener("hover",()=>{
-        gsap.to('.logo--download',{
-            scale: 1.12, 
-            duration: 0.5,
-            
-        })
-        button.addEventListener("mouseenter", () => hover.play());
-        button.addEventListener("mouseleave", () => hover.reverse());
-    })
-}
-*/
-
 gsap.utils.toArray(".logo--download").forEach(img => {
     let hover = gsap.to(img, {
         scale: 1.12, 
@@ -71,6 +52,31 @@ gsap.utils.toArray(".logo--download").forEach(img => {
         img.addEventListener("mouseleave", () => hover.reverse());
   });
 
+
+
+// changement de cases
+
+const slideLinks = document.querySelectorAll('.contents__el');
+slideLinks.forEach(function(link) {
+    link.addEventListener("click", onSlideLinkClick);
+});
+
+function onSlideLinkClick(e) {
+    //arrêt comportement normal
+    e.preventDefault();
+
+    // représentation de l'élément cliqué
+    const target = e.currentTarget
+    
+    // récupérer l'attribut href
+    let href = target.getAttribute('href');
+    let datahref = href.substr(1);
+
+    //mettre le contenu dans le data-page du div
+    const body = document.querySelector('#content__block');
+    
+    body.setAttribute('data-user', datahref);
+}
 
 
 /*
@@ -103,3 +109,23 @@ gsap.from(".patte", {
         
 }
 })*/
+
+
+
+
+
+/*
+const buttons = document.querySelectorAll('.logo--download')
+for (let button of buttons){
+    button.addEventListener("hover",()=>{
+        gsap.to('.logo--download',{
+            scale: 1.12, 
+            duration: 0.5,
+            
+        })
+        button.addEventListener("mouseenter", () => hover.play());
+        button.addEventListener("mouseleave", () => hover.reverse());
+    })
+}
+*/
+

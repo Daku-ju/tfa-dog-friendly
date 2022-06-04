@@ -50,21 +50,26 @@ main{
     font-size: 31.10px;
 }
 
-.link{
+.button{
     background-color: #51301F;
     color: #FFF0A3;
     padding: 10px;
-    border-radius: 10px;
+    width: 20%;
     text-align: center;
+    border-radius: 10px;
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
     font-size: 21.60px;
-    position: relative;
-
-
     font-family: "PP Fuji", normal; 
 }
+
+.link{
+    color: black;
+    position: relative;
+    font-family: "PP Fuji", normal; 
+    font-size: 21.60px;
+}
+
+
 .link::after{
     background-repeat: no-repeat;
     background-size: contain;
@@ -186,6 +191,28 @@ main{
 .logo--dog{
     padding: 20px;
 }
+
+[data-hidden="hide"] .user {
+    display: none;
+}
+
+[data-user="user1"] .user1, [data-user="user1"] .text--perso1, [data-user="user2"] .user2,  [data-user="user2"] .text--perso2{
+    display: block;
+  }
+  
+  [data-user="user1"] .text--perso2{
+    display: none;
+  }
+  [data-user="user1"] .text--perso1{
+    display: block;
+  }
+  [data-user="user2"] .text--perso1{
+    display: none;
+  }
+
+  [data-user="user2"] .text--perso2{
+    display: block;
+  }
 
 
 @media (min-width :750px){
