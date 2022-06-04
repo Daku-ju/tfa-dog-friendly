@@ -121,23 +121,6 @@ main{
     display: none;
 }
 
-.block--grid{
-    display: grid;
-    grid-column-gap: 110px;
-    grid-template-columns:  1fr 1fr;
-}
-.dgrid-start1{
-    grid-column-start: 1;
-} 
-.dgrid-end-2{
-    grid-column-end: -2;
-}
-.dgrid-start2{
-    grid-column-start: 2;
-} 
-.dgrid-end-1{
-    grid-column-end: -1;
-}
 
 //block de texte
 .block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing{
