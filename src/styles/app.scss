@@ -27,7 +27,7 @@ main{
     font-family: "PP Fuji", normal;
     color: black;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 31px;
     margin: 0px;
 }
 
@@ -88,17 +88,14 @@ main{
     font-size: 18px;
     line-height: 24px;
     margin: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
-.text--thinpad{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+
 
 //image
 .img{
-    padding-top: 20px;
+    padding-top: 31px;
     max-width: 300px;
     display: block;
     margin-left: auto;
@@ -124,9 +121,26 @@ main{
     display: none;
 }
 
+.block--grid{
+    display: grid;
+    grid-column-gap: 110px;
+    grid-template-columns:  1fr 1fr;
+}
+.dgrid-start1{
+    grid-column-start: 1;
+} 
+.dgrid-end-2{
+    grid-column-end: -2;
+}
+.dgrid-start2{
+    grid-column-start: 2;
+} 
+.dgrid-end-1{
+    grid-column-end: -1;
+}
 
 //block de texte
-.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp{
+.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing{
     display:flex ;
     flex-direction:column-reverse;
     align-items: center;
@@ -254,14 +268,18 @@ main{
     .title--little{
         font-size: 43.95px;
     }
-    .block--slogan, .block--advantage, .block--download,.block--intro, .block--mvp{
-        flex-direction: row-reverse;
-        justify-content: space-between;
+    .block{
         padding-top: 110px;
         padding-bottom: 110px;
     }
-    .block--feature{
+    .block--slogan, .block--advantage, .block--download,.block--intro, .block--mvp{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+    .block--feature, .block--landing{
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .block--testimony{
