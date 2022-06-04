@@ -111,10 +111,12 @@ main{
 }
 
 .img--testi{
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 50%;
-    margin-top: 0px;
+    padding: 0px;
+    padding-right: 10px;
+    margin: 0px;
 }
 
 .img__landing--none{
@@ -123,7 +125,7 @@ main{
 
 
 //block de texte
-.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing{
+.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing, .block--idee{
     display:flex ;
     flex-direction:column-reverse;
     align-items: center;
@@ -220,12 +222,19 @@ main{
     padding-right: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
+    margin-top: 18px;
+
 }
 
 @media (min-width :750px){
     main{
         margin-left: 100px;
         margin-right: 100px;
+    }
+    .testi{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }
 
@@ -260,7 +269,7 @@ main{
         justify-content: space-between;
 
     }
-    .block--feature, .block--landing{
+    .block--feature, .block--landing, .block--idee{
         flex-direction: row;
         justify-content: space-between;
     }
@@ -302,7 +311,7 @@ main{
         justify-content: space-between;
         align-items: center; 
         position: relative;
-        top: 2%;
+        top: 1%;
     }
     .block--download{
         align-items: flex-start;
@@ -316,6 +325,8 @@ main{
     .list{
         display: flex;
         justify-content: flex-start;
+        margin-top: 9px;
+        margin-bottom: 9px;
     }
 
 }
@@ -337,9 +348,6 @@ main{
     .text--landing{
         margin-left: 200px;
     }
-    .block--slogan{
-        top: 4%;
-    }
     .img__landing{
         max-width: 69%;
         object-fit: contain;
@@ -352,7 +360,7 @@ main{
     }
     .block--slogan{
         position: relative;
-        top: 2%;
+        top: -1%;
         padding: 0px;
     }
     .block--text{
@@ -367,5 +375,13 @@ main{
     .testimony{
         display: flex;
     }
-
+    .main{
+        max-width: 1450px;
+    }
+    .block{
+        max-width: 1550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
