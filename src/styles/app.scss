@@ -125,7 +125,7 @@ main{
 
 
 //block de texte
-.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing, .block--idee{
+.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing, .block--idee, .block--end{
     display:flex ;
     flex-direction:column-reverse;
     align-items: center;
@@ -145,6 +145,7 @@ main{
     background-color: #FFF0A3;
     padding: 20px;
     margin: 20px;
+    border-radius: 10px;
 
 }
 
@@ -269,7 +270,7 @@ main{
         justify-content: space-between;
 
     }
-    .block--feature, .block--landing, .block--idee{
+    .block--feature, .block--landing, .block--idee, .block--end{
         flex-direction: row;
         justify-content: space-between;
     }
