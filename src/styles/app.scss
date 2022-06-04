@@ -125,7 +125,7 @@ main{
 
 
 //block de texte
-.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing, .block--idee, .block--end{
+.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing, .block--idee, .block--end, .block--graph{
     display:flex ;
     flex-direction:column-reverse;
     align-items: center;
@@ -265,7 +265,7 @@ main{
         padding-top: 110px;
         padding-bottom: 110px;
     }
-    .block--slogan, .block--advantage, .block--download,.block--intro, .block--mvp{
+    .block--slogan, .block--advantage, .block--download,.block--intro, .block--mvp, .block--graph{
         flex-direction: row-reverse;
         justify-content: space-between;
 

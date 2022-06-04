@@ -29,17 +29,21 @@ gsap.from (".block--download",{
  }
 
 })
-gsap.from (".graph--anim",{
-    opacity:0,
-    y: 300,
-    duration: 0.5,
-   ease: "power 4",
-   scrollTrigger:{ 
-       trigger: ".graph",
-       start: "top center",       
+var graphs = document.querySelectorAll('.graph--anim');
+for (let graph of graphs){
+    gsap.from (graph,{
+        opacity:0,
+        y: 300,
+        duration: 0.5,
+       ease: "power 4",
+       scrollTrigger:{ 
+           trigger: graph,
+           start: "top top",       
+    }
+    
+    })
 }
 
-})
 
 
 gsap.utils.toArray(".logo--download").forEach(img => {
