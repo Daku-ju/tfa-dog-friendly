@@ -53,6 +53,11 @@ main{
 .title--logo{
     padding: 0px;
 }
+.title--testi{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 37.32px;
+}
 
 .button{
     background-color: #753D00;
@@ -151,6 +156,11 @@ main{
     margin-bottom: 20px;
     border-radius: 10px;
 
+}
+.testi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .block--slogan{
