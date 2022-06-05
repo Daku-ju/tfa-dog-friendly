@@ -198,6 +198,9 @@ main{
     text-align: center;
     font-family: "PP Fuji", normal;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .footer{
@@ -213,6 +216,9 @@ main{
 .logo--dog{
     padding: 20px;
     max-width: 45px;
+}
+.logo--footer{
+    max-width: 50px;
 }
 
 [data-hidden="hide"] .user {
