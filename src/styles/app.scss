@@ -172,7 +172,7 @@ main{
 .testi{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start
 }
 
 .block--slogan{
@@ -275,7 +275,6 @@ main{
     .testi{
         display: flex;
         align-items: center;
-        justify-content: space-around;
     }
 }
 
@@ -368,6 +367,22 @@ main{
         justify-content: flex-start;
         margin-top: 9px;
         margin-bottom: 9px;
+    }
+    .testimony--com1, .testimony--com2, .testimony--com3{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .img--testi{
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+        padding: 0px;
+        padding-right: 10px;
+        margin: 0px;
+    }
+    .testi{
+        flex-direction: column;
+        align-items: center;
     }
 
 
