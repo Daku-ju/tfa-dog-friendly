@@ -50,6 +50,9 @@ main{
 .title--thin{
     font-size: 31.10px;
 }
+.title--logo{
+    padding: 0px;
+}
 
 .button{
     background-color: #753D00;
@@ -144,7 +147,8 @@ main{
 .testimony--com1, .testimony--com2, .testimony--com3{
     background-color: #FFF0A3;
     padding: 20px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 
 }
@@ -194,6 +198,7 @@ main{
 
 .logo--dog{
     padding: 20px;
+    max-width: 45px;
 }
 
 [data-hidden="hide"] .user {
