@@ -41,6 +41,9 @@
         <h1 class="title title--big">Case Study</h1>
         
         <section class="block block--text">
+            <div>
+                
+            </div>
             <h2 class="title title--nrm">Le début, l’idée, les prémices</h2>
             <p class="text">Pour mon travail de fin d’année j’ai décidé de créer une application pour les maîtres et les chiens. Une application qui permettrait aux gens de se balader avec des inconnus, de se faire des amis tout en promenant leur ami à quatre pattes.</p>
         </section>
@@ -261,24 +264,38 @@
 
 
         <!--Me suis arrété ici dan smes coreections-->
-        <section class="block block--text">
-            <h2 class="title title--nrm">Prototype 3</h2>
-            <p class="text">Pour ce nouveau prototype, j'ai ajouté une carte avec un filtre plus une localisation. J’ai ajouté un petit bloc detexte pour chaque point sur la carte. Chaque élément de mes filtres est identifié par une icône. pax emple le restaurant, c'est un icone avec un fourchette et un couteau. J'ai aussi ajouté un bouton qui permet de trouver l'endroit directement sur la carte quand on est dans l'annuaire.</p>
-            <a href="https://www.figma.com/proto/Tbdwxuevo4e0n5nRT9dKSK/tfa-prototype?page-id=0%3A1&node-id=16%3A7&viewport=692%2C74%2C0.07&scaling=scale-down&starting-point-node-id=16%3A7&show-proto-sidebar=1" target="_blank"></a>
-
-            <h3 class="title title--little">Les changements à faire grâce à mes tests</h3>
-            <p class="text">J'ai remarqué que les gens ne pouvait pas trop savoir ou il était et donc d'avoir un filtres qu'il leur permet de trouver les endroits à moins d'un kilométre ne sert à rien si 'il ne savent aps ou ils sont. De plus le filtres pour les catrégories appairaissait bizzarement et donc les utilisateurs ne savaient pas trop comment l'utiliser. Ilsne voyait pas l'interet d'avoir juste un défilement vers la case, il préferait une page avec toutes les infos dessus.</p>
-            <p class="text">Ajouter un petit logo qui permettrait de savoir où on est.</p>
-            <p class="text">Ajouter un bouton qui permettrait de visualiser l'endroit sur la carte quand je suis dans l'annuaire des endroits.</p>
-            <p class="text">Mieux agencer mes filtres et afficher page par page les catégories.</p>
+        <section class="block  block--mvp">
+            <img class="img" 
+            src="assets/images/mvp3.jpg" 
+            alt="Image de la version 3 de mon application"
+            srcset="assets/images/mvp3@2x.jpg 2x"
+            loading="lazy"
+            decoding="async"
+            >
+            <div class=" block--text">
+                <h2 class="title title--nrm">Prototype 3</h2>
+                <p class="text">Pour ce nouveau prototype, j'ai ajouté une carte avec un filtre plus une localisation. J’ai ajouté un petit bloc detexte pour chaque point sur la carte. Chaque élément de mes filtres est identifié par une icône. pax emple le restaurant, c'est un icone avec un fourchette et un couteau. J'ai aussi ajouté un bouton qui permet de trouver l'endroit directement sur la carte quand on est dans l'annuaire.</p>
+                <a href="https://www.figma.com/proto/Tbdwxuevo4e0n5nRT9dKSK/tfa-prototype?page-id=0%3A1&node-id=16%3A7&viewport=692%2C74%2C0.07&scaling=scale-down&starting-point-node-id=16%3A7&show-proto-sidebar=1" target="_blank"></a>
+    
+                <h3 class="title title--little">Les changements à faire grâce à mes tests</h3>
+                <p class="text">J'ai remarqué que les gens ne pouvait pas trop savoir ou il était et donc d'avoir un filtres qu'il leur permet de trouver les endroits à moins d'un kilométre ne sert à rien si 'il ne savent aps ou ils sont. De plus le filtres pour les catrégories appairaissait bizzarement et donc les utilisateurs ne savaient pas trop comment l'utiliser. Ilsne voyait pas l'interet d'avoir juste un défilement vers la case, il préferait une page avec toutes les infos dessus.</p>
+                <p class="text">Ajouter un petit logo qui permettrait de savoir où on est.</p>
+                <p class="text">Ajouter un bouton qui permettrait de visualiser l'endroit sur la carte quand je suis dans l'annuaire des endroits.</p>
+                <p class="text">Mieux agencer mes filtres et afficher page par page les catégories.</p>
+            </div>
+           
 
         </section>
 
         <section class="block">
             <h2  class="title title--nrm">User Journey</h2>
-            <details>
-                <summary>Un jeune adulte agée de 25 ans avec son Cane Corso</summary>
-                <section>
+            <a>
+                <p class="button">Vincent et son Cane Corso</p>
+            </a>
+
+            <div class="user">
+                <div class="text--perso">
+                    <h3 class="title title--thin">Vincent âgée de 20 ans a décidé de tester la nouvelle apllication qui fait fureur dans son quartier</h3>
                     <ul>
                         <li class="text">Il décide d'ouvrir la nouvelle appliaction qui vient de télécharger Dog Friendly.</li>
                         <li class="text">Il décide chercher un endroit grâce aux filtres,il choisis tous les endroits à moins d'un 1 kilométre.</li>
@@ -286,9 +303,10 @@
                         <li class="text">il arrive sur la carte, il trouve l'endroit choisi mais ne voit pas sa position en temps réel.</li>
                         <li class="text">Il décide retourner sur l'endroit qu'il venait de voir. Mais impossible pour lui depuis cette page de retourner sur la page principale.</li>
                         <li class="text">Il quitte l'application car elle n'est pas assez fonctionnelle à sont gout.</li>
-                    </ul>
-                </section>
-            </details>
+                    </ul>  
+                </div>
+            </div>
+
         </section>
         
 
@@ -338,7 +356,7 @@
                     </a>
                 </div>
                 <div class="user user1">
-                    <div class="text--persotext--perso1">
+                    <div class="text--perso text--perso1">
                         <h3 class="title title--thin">Jacqueline agée de 40 ans voudrait aller au restaurant avec son berger Allemand nommée Urgis</h3>
                         <ul>
                             <li class="text">Elle se rend sur son application Dog Friendly</li>
@@ -353,7 +371,7 @@
                 </div>
     
                 <div class="user user2">
-                    <div class="text--persotext--perso2">
+                    <div class="text--perso text--perso2">
                         <h3 class="title title--thin">Alfred âgée de 30 ans a décidé de faire une gaterie à son chien Aiko</h3>
                         <ul>
                             <li  class="text">Oups la gâterie ne plait pas Aiko, on peut le voir parce qu'il commence à s'étouffer</li>
