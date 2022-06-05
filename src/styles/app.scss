@@ -145,7 +145,7 @@ main{
 
 
 //block de texte
-.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing, .block--idee, .block--end, .block--graph{
+.block--advantage, .block--feature, .block--intro, .block--slogan, .block--mvp, .block--landing, .block--idee, .block--end, .block--graph, .block--design{
     display:flex ;
     flex-direction:column-reverse;
     align-items: center;
@@ -307,7 +307,7 @@ main{
         justify-content: space-between;
 
     }
-    .block--feature, .block--landing, .block--idee, .block--end{
+    .block--feature, .block--landing, .block--idee, .block--end, .block--design{
         flex-direction: row;
         justify-content: space-between;
     }
