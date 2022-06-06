@@ -336,6 +336,12 @@ main{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.block__pad--top{
+    padding-top: 0px;
+}
+.block__pad--bottom{
+    padding-bottom: 0px;
+}
 
 @media (min-width :750px){
     main{
@@ -476,6 +482,12 @@ main{
     .block--mvp, .block--design, .block--idee, .block--graph{
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    .block__pad--top{
+        padding-top: 0px;
+    }
+    .block__pad--bottom{
+        padding-bottom: 0px;
     }
 
 
