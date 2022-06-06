@@ -10,15 +10,40 @@ var images = document.querySelectorAll('.img--animation');
 for (let image of images){
     gsap.from(image,{
         opacity:0,
-        duration: 0.5, 
+        duration: 0.7, 
         ease: "power 4",
         scrollTrigger:{ 
             trigger: image,
             start: "bottom bottom",       
- }
- })
-
+        }
+    })
 }
+
+var transX = document.querySelectorAll('.anim--transl');
+for (let translationX of transX){
+    gsap.from(translationX,{
+        x : -900,
+        duration: 0.5, 
+        ease: "power 4",
+        scrollTrigger:{ 
+            trigger: translationX,
+            start: "top top",         
+        }
+    })
+}
+var transY = document.querySelectorAll('.anim--translY');
+for (let translationY of transY){
+    gsap.from(translationY,{
+        x: 700,
+        duration: 0.5, 
+        ease: "power 4",
+        scrollTrigger:{ 
+            trigger: translationY,
+            start: "top top",         
+        }
+    })
+}
+
 
 gsap.from (".block--download",{
     x : -900,
@@ -27,9 +52,10 @@ gsap.from (".block--download",{
     scrollTrigger:{ 
         trigger: ".testimony--com3",
         start: "bottom center",       
- }
+    }
 
 })
+
 var graphs = document.querySelectorAll('.graph--anim');
 for (let graph of graphs){
     gsap.from (graph,{
@@ -40,7 +66,7 @@ for (let graph of graphs){
        scrollTrigger:{ 
            trigger: graph,
            start: "top bottom",       
-    }
+        }
     
     })
 }
