@@ -26,8 +26,8 @@ main{
 .title{
     font-family: "PP Fuji", normal;
     color: black;
-    padding-top: 31px;
-    padding-bottom: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0px;
 }
 
@@ -108,8 +108,8 @@ main{
     font-size: 18px;
     line-height: 24px;
     margin: 0px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -121,6 +121,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+    padding-top: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -323,6 +324,11 @@ main{
     max-width: 250px;
 }
 
+.video{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 @media (min-width :750px){
     main{
         margin-left: 100px;
@@ -345,12 +351,7 @@ main{
         line-height: 90px;
         text-align: left;
     }
-    .main__video{
-        height: 700px;
-        width: 300px;
 
-    }
-    
     .title--nrm{
         font-size: 55px;
         line-height: 64px;
@@ -448,6 +449,15 @@ main{
     }
     .img--slider{
         max-width: 250px;
+    }
+    .title--flex{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .video{
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 400px;
     }
 
 
