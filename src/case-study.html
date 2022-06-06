@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 
 </head>
-<body data-user="user1">
+<body>
     <main>
 
         <h1 class="title title--big">Case Study</h1>
@@ -351,7 +351,7 @@
                 </div>
             </section>
 
-            <section class="block--text">
+            <section class="block--mvp">
                 <figure>
                     <img class="img" 
                     src="assets/images/mvp3.jpg" 
@@ -383,7 +383,7 @@
                 </figure>
                 
                 <div class=" block--text">
-                    <h3>Tests Utilisateurs</h3>
+                    <h3 class="title title--little">Tests Utilisateurs</h3>
                     <p>Lors de mes tests, j'ai pu remarqué que les gens avaient du mal avec les filtres car ils étaient agencés très bizarrement. Ensuite, Ils ne voyaient pas l'interêt d'avoir juste un défilement vers la case, il préferait une page avec toutes les infos&nbsp;dessus. De plus, je ne connaissais pas trop figma, j'avais commis une petite boulette qui était de mettre un background foncé quand l'overlay est actif. Du coup on était obligé de fermer la page avant de pouvoir continuer alors que je voulais l’inverse justement pour éviter aux utilisateurs de faire trop de clics pour une action. De plus, dans la dernière section en bas qui est toilettage, on ne pouvait pas voir toutes les informations.</p>
                     <h3 class="title title--little">Les changements à faire grâce à mes&nbsp;tests</h3>
                     <p class="text">J'ai remarqué que les gens ne pouvait pas trop savoir ou il était et donc d'avoir un filtres qu'il leur permet de trouver les endroits à moins d'un kilomètre ne sert à rien si 'il ne savent pas ou ils sont.</p>
@@ -393,42 +393,40 @@
                 </div>
             </section>
             
-            <section>
+            <section class="block--text">
                 <h3  class="title title--little">User Journey</h3>
-                <div  id="content__block" data-hidden="hide" data-user="user1">
-                    <a href="#user1" class="contents__el contents__el1">
-                        <p class="button">Vincent et son Cane&nbsp;Corso</p>
-                    </a>
-                    <a href="#user2" class="contents__el contents__el2">
-                        <p class="button">Monsieur Bifurquay et son Berger blanc.</p>
-                    </a>
-        
-                    <div class="user user1">
-                        <div class="text--perso text--perso1">
-                            <h3 class="title title--thin">Vincent âgée de 20 ans a décidé de tester la nouvelle application qui fait fureur dans son&nbsp;quartier</h3>
-                            <ul>
-                                <li class="text">Il décide d'ouvrir la nouvelle appliaction qui vient de télécharger Dog&nbsp;Friendly.</li>
-                                <li class="text">Il décide chercher un endroit grâce aux filtres,il choisis tous les endroits à moins d'un 1&nbsp;kilométre.</li>
-                                <li class="text">Il décide prendre un endroit au hasard et de le visualiser sur la carte car l'adresse ne lui dit&nbsp;rien.</li>
-                                <li class="text">il arrive sur la carte, il trouve l'endroit choisi mais ne voit pas sa position en temps&nbsp;réel.</li>
-                                <li class="text">Il décide retourner sur l'endroit qu'il venait de voir. Mais impossible pour lui depuis cette page de retourner sur la page&nbsp;principale.</li>
-                                <li class="text">Il quitte l'application car elle n'est pas assez fonctionnelle à sont&nbsp;gout.</li>
-                            </ul>  
+
+                <details>
+                    <summary class="button">Vincent et son Cane Corso</summary>
+                        <div>
+                            <div class="text--user">
+                                <h3 class="title title--thin">Vincent âgée de 20 ans a décidé de tester la nouvelle application qui fait fureur dans son&nbsp;quartier</h3>
+                                <ul>
+                                    <li class="text">Il décide d'ouvrir la nouvelle appliaction qui vient de télécharger Dog&nbsp;Friendly.</li>
+                                    <li class="text">Il décide chercher un endroit grâce aux filtres,il choisis tous les endroits à moins d'un 1&nbsp;kilométre.</li>
+                                    <li class="text">Il décide prendre un endroit au hasard et de le visualiser sur la carte car l'adresse ne lui dit&nbsp;rien.</li>
+                                    <li class="text">il arrive sur la carte, il trouve l'endroit choisi mais ne voit pas sa position en temps&nbsp;réel.</li>
+                                    <li class="text">Il décide retourner sur l'endroit qu'il venait de voir. Mais impossible pour lui depuis cette page de retourner sur la page&nbsp;principale.</li>
+                                    <li class="text">Il quitte l'application car elle n'est pas assez fonctionnelle à sont&nbsp;gout.</li>
+                                </ul>  
+                            </div>
                         </div>
-                    </div>
-                    <div class="user user2">
-                        <div class="text--perso text--perso2">
-                            <h3 class="title title--thin">Monsieur Bifurquay voudrait se rendre dans un parc avec son chien et ses élèves.</h3>
-                            <ul>
-                                <li>Il cherche après les filtres et cherche un parc dans les environs. Il tombe facilement dessus en un clic et la page se met à scroller sans même qu'il ne puisse le voir. Il ne comprend pas ce qui vient de se passer.</li>
-                                <li> Étrange sensation, mais il a trouvé les parcs. Il trouve le parc Paradis et voudrait bien le visualiser sur la carte mais impossible.</li>
-                                <li>Il décide de se rendre sur la carte et de chercher le parc, sauf qu'il ne le trouve pas car le logo n'est pas celui d'un parc mais celui d'un lieux.</li>
-                                <li>Il abandonne assez vite car c'est impossible pour lui de continuer sur cette application.</li>
-                             </ul>
-      
+                </details>
+
+                <details>
+                    <summary class="button">Monsieur Bifurkay et Shidow</summary>
+                        <div>
+                            <div class="text--user">
+                                <h3 class="title title--thin">Monsieur Bifurquay voudrait se rendre dans un parc avec son chien et ses élèves.</h3>
+                                <ul>
+                                    <li>Il cherche après les filtres et cherche un parc dans les environs. Il tombe facilement dessus en un clic et la page se met à scroller sans même qu'il ne puisse le voir. Il ne comprend pas ce qui vient de se passer.</li>
+                                    <li> Étrange sensation, mais il a trouvé les parcs. Il trouve le parc Paradis et voudrait bien le visualiser sur la carte mais impossible.</li>
+                                    <li>Il décide de se rendre sur la carte et de chercher le parc, sauf qu'il ne le trouve pas car le logo n'est pas celui d'un parc mais celui d'un lieux.</li>
+                                    <li>Il abandonne assez vite car c'est impossible pour lui de continuer sur cette application.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                </details>
                 
     
             </section>
@@ -455,10 +453,148 @@
             </section>
 
             <section class="block--mvp">
-                <video class="main__video" controls=""> 
-                    <source src="assets/videos/mvp5.mp4" type="video/mp4">
-                    Votre navigateur n'est pas compatible.
-                </video>
+                <div class="mgrid-start1 mgrid-end-1 dgrid-start2 dgrid-end-2">
+                    <div id="demo">
+                      <!-- code et images de w3schools -->
+                      <!-- consulté en ligne le 03/02/2019 -->
+                      <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+              
+                      <!-- Slideshow container -->
+                      <div class="slideshow-container">
+              
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page1.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page1@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                                
+                            </figure>
+        
+                        </div>
+              
+                        <div class="mySlides fade">
+        
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page2.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page2@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </figure>
+        
+                        </div>
+                                 
+                        <div class="mySlides fade">
+        
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page3.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page3@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </figure>
+        
+                        </div>
+        
+                        <div class="mySlides fade">
+        
+                            <figure">
+                            <img class="img img--slider" 
+                            src="assets/images/page4.jpg" 
+                            alt="Image d'un chien qui a l'air effrayé"
+                            srcset="assets/images/page4@2x.jpg 2x"
+                            loading="lazy"
+                            decoding="async"
+                            >
+                            </figure>
+        
+                        </div>
+        
+                        <div class="mySlides fade">
+        
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page5.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page5@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </figure>
+        
+                        </div>
+        
+                        <div class="mySlides fade">
+        
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page6.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page6@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </figure>
+        
+                        </div>
+        
+                        <div class="mySlides fade">
+        
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page7.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page7@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </figure>
+        
+                        </div>
+        
+                        <div class="mySlides fade">
+        
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page8.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page8@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </figure>
+        
+                        </div>
+                        <div class="mySlides fade">
+        
+                            <figure>
+                                <img class="img img--slider" 
+                                src="assets/images/page9.jpg" 
+                                alt="Image d'un chien qui a l'air effrayé"
+                                srcset="assets/images/page9@2x.jpg 2x"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </figure>
+        
+                        </div>
+              
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                      </div>       
+                    </div>
+                  </div>
                 <div class="block--text">
                     <h3 class="title title--little">Prototype numéro&nbsp;5</h3>
                     <p class="text">J'ai ajouté les commentaires et j'ai aussi ajouter une page pour se connecter afin de pouvoir écrire un commentaire. Soit on crée un compte, soit on se connecte. J'ai aussi refait le design de mes pages, qui me convient beaucoup plus actuellemnt. Je commence enfin à devenir fière du travail que j'aurais produit pendnat ce&nbsp;mois.</p>
@@ -467,16 +603,18 @@
                     <p class="text">J'ai pu remarqué que j'avais répondu aux attentes de mes utilisateur parce qu'ils n'avait plus aucun problème à trouver ce que je demandais ou pour trouver leur propre bonheur. Du coup, j'ai décidé de faire des users journey afin de trouver quelques choses qui aurait échapper aux&nbsp;utilisateurs</p>
                 </div>
 
+                
+
 
     
             </section>
-            <section>
+            <section class="block--text">
                 <h3 class="title title--little">User Journey </h3>
                 <details>
                     <summary class="button">Jacqueline et Urgis</summary>
                     <section>
-                        <div class="user user1">
-                            <div class="text--perso text--perso1">
+                        <div>
+                            <div class="text--user">
                                 <h4 class="title title--thin">Jacqueline agée de 40 ans voudrait aller au restaurant avec son berger Allemand nommée&nbsp;Urgis</h4>
                                 <ul>
                                     <li class="text">Elle se rend sur son application Dog&nbsp;Friendly</li>
@@ -495,8 +633,8 @@
                 <details>
                     <summary class="button">Alfred et Aiko</summary>
                     <section>
-                        <div class="user user2">
-                            <div class="text--perso text--perso2">
+                        <div>
+                            <div class="text--user">
                                 <h4 class="title title--thin">Alfred âgée de 30 ans a décidé de faire une gaterie à son chien&nbsp;Aiko</h4>
                                 <ul>
                                     <li  class="text">Oups la gâterie ne plait pas Aiko, on peut le voir parce qu'il commence à&nbsp;s'étouffer</li>
@@ -586,73 +724,4 @@
 
     
 
-    <div class="mgrid-start1 mgrid-end-1 dgrid-start2 dgrid-end-2">
-            <div id="demo">
-              <!-- code et images de w3schools -->
-              <!-- consulté en ligne le 03/02/2019 -->
-              <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-      
-              <!-- Slideshow container -->
-              <div class="slideshow-container">
-      
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    
-                    <figure>
-                        <img class="img" src="src/image/fct1.jpg" alt="image d'un agenda intéractif" srcset="src/image/fct1@2x.jpg 2x" loading="eager" decoding="async">
-                        <figcaption>Image d'un agenda intéractif</figcaption>
-                    </figure>
-
-                </div>
-      
-                <div class="mySlides fade">
-
-                    <figure>
-                        <img class="img" src="src/image/fct2.jpg" alt="image d'une recherche de film" srcset="src/image/fct2@2x.jpg 2x" loading="eager" decoding="async">
-                        <figcaption>Image d'une recherchede film | </figcaption>
-                    </figure>
-
-                </div>
-                         
-                <div class="mySlides fade">
-
-                    <figure>
-                        <img class="img" src="src/image/fct3.jpg" alt="image d'une barre de recherche avec une recherche par thématique" srcset="src/image/fct3@2x.jpg 2x" loading="eager" decoding="async">
-                        <figcaption>Barre de recherche </figcaption>
-                    </figure>
-
-                </div>
-
-                <div class="mySlides fade">
-
-                    <figure">
-                        <img class="img" src="src/image/fct4.jpg" alt="une crate de la ludothèque et des endroits aux alentours" srcset="src/image/fct4@2x.jpg 2x" loading="eager" decoding="async">
-                        <figcaption>Carte intéractive</figcaption>
-                    </figure>
-
-                </div>
-
-                <div class="mySlides fade">
-
-                    <figure>
-                        <img class="img" src="src/image/fct5.jpg" alt="un agenda intéractif qui permet de choisir une date et de voir les places disponibles" srcset="src/image/fct5@2x.jpg 2x" loading="eager" decoding="async">
-                        <figcaption> Agenda intéractif</figcaption>
-                    </figure>
-
-                </div>
-
-                <div class="mySlides fade">
-
-                    <figure>
-                        <img class="img" src="src/image/fct6.jpg" alt="Une carte intéractive avec les endroits à visiter en égypte" srcset="src/image/fct6@2x.jpg 2x" loading="eager" decoding="async">
-                        <figcaption>Carte intéractif</figcaption>
-                    </figure>
-
-                </div>
-      
-                <!-- Next and previous buttons -->
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>
-              </div>       
-            </div>
-          </div>
+  

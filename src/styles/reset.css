@@ -24,3 +24,7 @@ button{
 html, body{
     scroll-behavior: smooth;
 }
+figure{
+    padding: 0px;
+    margin: 0px;
+}

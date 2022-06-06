@@ -69,7 +69,6 @@ main{
     display: block;
     font-size: 21.60px;
     font-family: "PP Fuji", normal; 
-    max-width: 30%;
 }
 
 .link{
@@ -235,7 +234,7 @@ main{
 }
 
 
-.text--perso{
+.text--user{
     background-color: #FFF0A3;
     padding-left: 10px;
     padding-right: 10px;
@@ -269,32 +268,33 @@ main{
     padding-top: 37px;
     padding-left: 10px;
     padding-right: 10px;
-    color: var(--couleur-bg);
+    color: #FFFADE;
     font-weight: bold;
     font-size: 18px;
 
-    border-radius: 0 3px 3px 0;
+    border-radius: 10px;
     user-select: none;
-    background-color: var(--color-titre);
+    background-color: #51301F;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 10px;
 }
+
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover  {
     
-    background-color: var(--color-hv);
-    color: var(--color-noirfaux);
+    background-color: #000000;
+    color: #FFFFFF;
    
 }
 
 .mySlides{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 
@@ -319,6 +319,9 @@ main{
 .hide{
   display: none;
 }
+.img--slider{
+    max-width: 250px;
+}
 
 @media (min-width :750px){
     main{
@@ -328,6 +331,9 @@ main{
     .testi{
         display: flex;
         align-items: center;
+    }
+    .button{
+        max-width: 50%;
     }
 }
 
@@ -440,6 +446,9 @@ main{
         flex-direction: column;
         align-items: center;
     }
+    .img--slider{
+        max-width: 250px;
+    }
 
 
 }
@@ -495,6 +504,9 @@ main{
     }
     .block--text{
         max-width: 550px;
+    }
+    .img--slider{
+        max-width: 250px;
     }
 
 }
