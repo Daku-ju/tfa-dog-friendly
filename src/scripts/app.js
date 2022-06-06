@@ -5,6 +5,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+//anim gsap
 var images = document.querySelectorAll('.img--animation');
 for (let image of images){
     gsap.from(image,{
@@ -45,7 +46,7 @@ for (let graph of graphs){
 }
 
 
-
+//grossir mes buttons en hover
 gsap.utils.toArray(".logo--download").forEach(img => {
     let hover = gsap.to(img, {
         scale: 1.12, 
@@ -56,8 +57,53 @@ gsap.utils.toArray(".logo--download").forEach(img => {
         img.addEventListener("mouseleave", () => hover.reverse());
   });
 
-
-
+//slides
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  let prevButton = document.querySelector(".prev");
+  if(prevButton){
+      prevButton.addEventListener('click', () => {
+          plusSlides(-1);
+      });
+  }
+  
+  let nextButton = document.querySelector(".next");
+  if(nextButton){
+      nextButton.addEventListener('click', () => {
+          plusSlides(1);
+      });
+  }
+  
+  
+  // Next/previous controls
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+      showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+      var i;
+      var slides = document.querySelectorAll(".mySlides");
+      if (n > slides.length) {
+          slideIndex = 1;
+      } 
+  
+      if (n < 1) {
+          slideIndex = slides.length;
+      }
+  
+      for (i = 0; i < slides.length; i++) {
+          slides[i].classList.add("hide");
+      }
+  
+      slides[slideIndex-1].classList.remove("hide"); 
+  }
+  
 
 
 

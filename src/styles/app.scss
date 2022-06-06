@@ -69,6 +69,7 @@ main{
     display: block;
     font-size: 21.60px;
     font-family: "PP Fuji", normal; 
+    max-width: 30%;
 }
 
 .link{
@@ -232,58 +233,7 @@ main{
 .logo--footer{
     max-width: 50px;
 }
-/*
-[data-hidden="hide"] .user {
-    display: none;
-}
 
-[data-user="user1"] .user1, [data-user="user1"] .text--perso1, [data-user="user2"] .user2,  [data-user="user2"] .text--perso2{
-    display: block;
-  }
-  
-  [data-user="user1"] .text--perso2{
-    display: none;
-  }
-  [data-user="user1"] .text--perso1{
-    display: block;
-  }
-  [data-user="user2"] .text--perso1{
-    display: none;
-  }
-
-  [data-user="user2"] .text--perso2{
-    display: block;
-  }
-  */
-
-  [data-hidden="hide"] .user__mvp3 {
-    display: none;
-}
-[data-hidden="hide"] .user__mvp5 {
-    display: none;
-}
-
-[data-user="user__mvp5--1"] .user1, [data-user="user__mvp5--1"] .text__user--1, [data-user="user__mvp5--2"] .text__user--2,  [data-user="user__mvp5--2"] .text__user--2{
-    display: block;
-  }
-
-  [data-user="user__mvp3--1"] .user1, [data-user="user__mvp--1"] .text__user--1, [data-user="user__mvp5--2"] .text__user--2,  [data-user="user__mvp3--2"] .text__user--2{
-    display: block;
-  }
-  
-  [data-user="user__mvp5--1"] .text__user--2, [data-user="user__mvp3--1"] .text__user--2{
-    display: none;
-  }
-  [data-user="user__mvp5--1"] .text__user--1,  [data-user="user__mvp3--1"] .text__user--1{
-    display: block;
-  }
-  [data-user="user__mvp5--2"] .text__user--1, [data-user="user__mvp3--2"] .text__user--1{
-    display: none;
-  }
-
-  [data-user="user__mvp5--2"] .text__user--2,  [data-user="user__mvp3--2"] .text__user--2{
-    display: block;
-  }
 
 .text--perso{
     background-color: #FFF0A3;
@@ -296,6 +246,78 @@ main{
 }
 .text--thin{
     font-size: 16px;
+}
+
+/* Slider*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -36px;
+    padding-top: 37px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--couleur-bg);
+    font-weight: bold;
+    font-size: 18px;
+
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: var(--color-titre);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover  {
+    
+    background-color: var(--color-hv);
+    color: var(--color-noirfaux);
+   
+}
+
+.mySlides{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.hide{
+  display: none;
 }
 
 @media (min-width :750px){
