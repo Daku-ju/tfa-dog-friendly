@@ -115,7 +115,6 @@ main{
 
 //image
 .img{
-    padding-top: 31px;
     max-width: 300px;
     display: block;
     margin-left: auto;
@@ -328,6 +327,14 @@ main{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.text--litpad{
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.block--mvp{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 @media (min-width :750px){
     main{
@@ -399,6 +406,9 @@ main{
         margin-left: 0px;
         margin-right: 0px;
         max-width: 350px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+
     }
 
     .img__landing--none{
@@ -458,6 +468,11 @@ main{
         padding-left: 20px;
         padding-right: 20px;
         max-width: 400px;
+    }
+
+    .block--mvp{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
 
