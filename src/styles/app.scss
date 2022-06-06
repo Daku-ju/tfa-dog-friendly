@@ -70,6 +70,10 @@ main{
     font-size: 21.60px;
     font-family: "PP Fuji", normal; 
 }
+.button:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
 
 .link{
     color: black;
@@ -88,7 +92,7 @@ main{
     width: 19px;
     height: 18.65px;
     right: 7%;
-    top: 36%;
+    top: 27%;
 }
 .link--mvp::after{
     background-repeat: no-repeat;
@@ -99,7 +103,12 @@ main{
     width: 19px;
     height: 18.65px;
     right: -32%;
-    top: 36%;
+    top: 27%;
+}
+.nav{
+    display: flex;
+    position: initial;
+    align-items: center;
 }
 
 
@@ -229,7 +238,9 @@ main{
 }
 .footer{
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
 }
 
 .link--footer{
@@ -355,6 +366,90 @@ main{
     padding-bottom: 0px;
 }
 
+//uikit
+
+.color{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+.block--color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color--yellowl{
+    background-color: #FFFADE;
+}
+.color--yellowd{
+    background-color: #FFF0A3;
+}
+.color--browl{
+    background-color: #753D00;
+}
+.color--browd{
+    background-color: #51301F;
+}
+.color--black{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.link__ui--normal{
+    color: black;
+    font-family: "PP Fuji", normal; 
+    font-size: 21.60px;
+}
+.link__ui--imp{
+    color: black;
+    position: relative;
+    font-family: "PP Fuji", normal; 
+    font-size: 21.60px;
+}
+
+.link__ui--imp::after{
+    background-repeat: no-repeat;
+    background-size: contain;
+    content : "";
+    position: absolute;
+    background-image: url(../assets/images/patte.png);
+    width: 19px;
+    height: 18.65px;
+    right: 24%;
+    top: 27%;
+}
+
+.link__ui--hover{
+    text-decoration: #753D00 underline 4px;
+}
+.button__ui--normal{
+    background-color: #753D00;
+    color: #FFF0A3;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    font-size: 21.60px;
+    font-family: "PP Fuji", normal; 
+
+}
+.button__ui--hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    font-size: 21.60px;
+    font-family: "PP Fuji", normal; 
+
+}
+.text--pp{
+    font-family: "PP Fuji", normal; 
+}
+
+
 @media (min-width :750px){
     main{
         margin-left: 100px;
@@ -366,6 +461,15 @@ main{
     }
     .button{
         max-width: 50%;
+    }
+    .button__ui--normal, .button__ui--hover{
+        max-width: 50%;
+    }
+    .link__ui--imp::after{
+        right: 57%;
+    }
+    .footer{
+        flex-direction: row;
     }
 }
 
@@ -500,6 +604,12 @@ main{
     }
     .block__pad--bottom{
         padding-bottom: 0px;
+    }
+    .block--color{
+        flex-direction: row;
+    }
+    .link__ui--imp::after{
+        right: 73%;
     }
 
 
