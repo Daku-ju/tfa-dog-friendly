@@ -209,6 +209,7 @@ main{
     display: flex;
     align-items: center;
     z-index: 2;
+    margin-left: 26px;
 }
 
 .logo{
@@ -471,6 +472,9 @@ main{
     .footer{
         flex-direction: row;
     }
+    .nav--landing{
+        margin-left: 100px;
+    }
 }
 
 @media (min-width :1150px){
@@ -519,6 +523,10 @@ main{
     main{
         margin-left: 150px;
         margin-right: 150px;
+    }
+
+    .nav--landing{
+        margin-left: 150px;
     }
 
     .block--text{
@@ -641,6 +649,7 @@ main{
     }
     .nav--landing{
         position: absolute;
+        margin-left: 200px;
     }
     .block--slogan{
         position: relative;
