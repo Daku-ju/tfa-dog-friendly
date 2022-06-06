@@ -58,55 +58,55 @@ gsap.utils.toArray(".logo--download").forEach(img => {
   });
 
 
- const SliderElement =document.querySelector('.slider') 
+const SliderElement =document.querySelector('.slider') 
  if(SliderElement){
-//slides
-var slideIndex = 1;
-showSlides(slideIndex);
+    //slides
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-let prevButton = document.querySelector(".prev");
-if(prevButton){
-    prevButton.addEventListener('click', () => {
-        plusSlides(-1);
-    });
-}
-
-let nextButton = document.querySelector(".next");
-if(nextButton){
-    nextButton.addEventListener('click', () => {
-        plusSlides(1);
-    });
-}
-
-
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.querySelectorAll(".mySlides");
-    if (n > slides.length) {
-        slideIndex = 1;
-    } 
-
-    if (n < 1) {
-        slideIndex = slides.length;
+    let prevButton = document.querySelector(".prev");
+    if(prevButton){
+        prevButton.addEventListener('click', () => {
+            plusSlides(-1);
+        });
     }
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.add("hide");
+    let nextButton = document.querySelector(".next");
+    if(nextButton){
+        nextButton.addEventListener('click', () => {
+            plusSlides(1);
+        });
     }
 
-    slides[slideIndex-1].classList.remove("hide"); 
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.querySelectorAll(".mySlides");
+        if (n > slides.length) {
+            slideIndex = 1;
+        } 
+
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.add("hide");
+        }
+
+        slides[slideIndex-1].classList.remove("hide"); 
+    }
 }
- }
 
 
   
