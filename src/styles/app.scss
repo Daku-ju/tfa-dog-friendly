@@ -232,7 +232,7 @@ main{
 .logo--footer{
     max-width: 50px;
 }
-
+/*
 [data-hidden="hide"] .user {
     display: none;
 }
@@ -254,6 +254,37 @@ main{
   [data-user="user2"] .text--perso2{
     display: block;
   }
+  */
+
+  [data-hidden="hide"] .user__mvp3 {
+    display: none;
+}
+[data-hidden="hide"] .user__mvp5 {
+    display: none;
+}
+
+[data-user="user__mvp5--1"] .user1, [data-user="user__mvp5--1"] .text__user--1, [data-user="user__mvp5--2"] .text__user--2,  [data-user="user__mvp5--2"] .text__user--2{
+    display: block;
+  }
+
+  [data-user="user__mvp3--1"] .user1, [data-user="user__mvp--1"] .text__user--1, [data-user="user__mvp5--2"] .text__user--2,  [data-user="user__mvp3--2"] .text__user--2{
+    display: block;
+  }
+  
+  [data-user="user__mvp5--1"] .text__user--2, [data-user="user__mvp3--1"] .text__user--2{
+    display: none;
+  }
+  [data-user="user__mvp5--1"] .text__user--1,  [data-user="user__mvp3--1"] .text__user--1{
+    display: block;
+  }
+  [data-user="user__mvp5--2"] .text__user--1, [data-user="user__mvp3--2"] .text__user--1{
+    display: none;
+  }
+
+  [data-user="user__mvp5--2"] .text__user--2,  [data-user="user__mvp3--2"] .text__user--2{
+    display: block;
+  }
+
 .text--perso{
     background-color: #FFF0A3;
     padding-left: 10px;
