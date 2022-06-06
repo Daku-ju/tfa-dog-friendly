@@ -103,6 +103,17 @@ main{
 }
 
 
+.link:hover, .footer--text:hover{
+  text-decoration: #753D00 underline 4px;
+}
+
+.block--credits{
+    display: flex;
+    flex-direction: column;
+}
+.link__credits:hover{
+    text-decoration: #753D00 underline 4px;
+}
 
 .text{
     font-size: 18px;
