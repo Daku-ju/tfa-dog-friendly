@@ -31,14 +31,14 @@ for (let translationX of transX){
         }
     })
 }
-var transY = document.querySelectorAll('.anim--translY');
-for (let translationY of transY){
-    gsap.from(translationY,{
+var transP = document.querySelectorAll('.anim--translP');
+for (let translationP of transP){
+    gsap.from(translationP,{
         x: 700,
         duration: 0.5, 
         ease: "power 4",
         scrollTrigger:{ 
-            trigger: translationY,
+            trigger: translationP,
             start: "top top",         
         }
     })
