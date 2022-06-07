@@ -2,11 +2,6 @@
 @import 'components/type';
 @import 'reset.css';
 
-@font-face {
-    font-family: 'Heebo', sans-serif;
-    font-style: normal;
-    src: url("../assets/fonts/PPFuji-Regular.otf") format("otf");
-   }
 
 body{
     font-family: 'Abel', sans-serif;
@@ -66,6 +61,7 @@ main{
 
 .button{
     font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     font-style: normal;
     background-color: #753D00;
     color: #FFF0A3;
@@ -75,6 +71,7 @@ main{
     border-radius: 10px;
     display: block;
     font-size: 21.60px;
+    cursor: pointer;
 }
 .button:hover{
     background-color: #000000;
@@ -408,12 +405,14 @@ main{
 .link__ui--normal{
     color: black;
     font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     font-size: 21.60px;
 }
 .link__ui--imp{
     color: black;
     position: relative;
     font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     font-size: 21.60px;
 }
 
@@ -435,6 +434,7 @@ main{
 }
 .button__ui--normal{
     font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     background-color: #753D00;
     color: #FFF0A3;
     padding: 10px;
@@ -443,10 +443,12 @@ main{
     border-radius: 10px;
     display: block;
     font-size: 21.60px;
+    cursor: pointer;
 }
 
 .button__ui--hover{
     font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     background-color: #000000;
     color: #FFFFFF;
     padding: 10px;
@@ -455,14 +457,17 @@ main{
     border-radius: 10px;
     display: block;
     font-size: 21.60px;
+    cursor: pointer;
     
 
 }
 .text--pp{
     font-family: 'Heebo', sans-serif;
+    font-weight: 500;
 }
 .bloc--hover{
     font-family: 'Heebo', sans-serif;
+    font-weight: 500;
 }
 
 @media (min-width :750px){
