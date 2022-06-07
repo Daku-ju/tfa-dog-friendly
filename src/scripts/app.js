@@ -44,17 +44,19 @@ for (let translationP of transP){
     })
 }
 
+if(window.matchMedia('(min-width:1150px)').matches){
+    gsap.from (".block--download",{
+        x : -900,
+        duration: 0.5, 
+        ease: "power 4",
+        scrollTrigger:{ 
+            trigger: ".testimony--com3",
+            start: "bottom center",       
+        }
+    
+    })
+}
 
-gsap.from (".block--download",{
-    x : -900,
-    duration: 0.5, 
-    ease: "power 4",
-    scrollTrigger:{ 
-        trigger: ".testimony--com3",
-        start: "bottom center",       
-    }
-
-})
 
 var graphs = document.querySelectorAll('.graph--anim');
 for (let graph of graphs){

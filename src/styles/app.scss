@@ -3,7 +3,7 @@
 @import 'reset.css';
 
 @font-face {
-    font-family: "PP Fuji";
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     src: url("../assets/fonts/PPFuji-Regular.otf") format("otf");
    }
@@ -25,7 +25,8 @@ main{
 
 
 .title{
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     color: black;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -53,6 +54,9 @@ main{
 }
 .title--logo{
     padding: 0px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
 }
 .title--testi{
     padding-top: 10px;
@@ -61,7 +65,8 @@ main{
 }
 
 .button{
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
+    font-style: normal;
     background-color: #753D00;
     color: #FFF0A3;
     padding: 10px;
@@ -77,7 +82,9 @@ main{
 }
 
 .link{
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    font-style: normal;
     color: black;
     position: relative;
     font-size: 21.60px;
@@ -231,7 +238,8 @@ main{
 
 .footer--text{
     text-align: center;
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
     color: black;
     display: flex;
     align-items: center;
@@ -251,6 +259,7 @@ main{
 }
 
 .logo--dog{
+
     padding: 20px;
     max-width: 80px;
 }
@@ -398,13 +407,13 @@ main{
 }
 .link__ui--normal{
     color: black;
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
     font-size: 21.60px;
 }
 .link__ui--imp{
     color: black;
     position: relative;
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
     font-size: 21.60px;
 }
 
@@ -422,9 +431,10 @@ main{
 
 .link__ui--hover{
     text-decoration: #753D00 underline 4px;
+    color: #000000;
 }
 .button__ui--normal{
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
     background-color: #753D00;
     color: #FFF0A3;
     padding: 10px;
@@ -436,7 +446,7 @@ main{
 }
 
 .button__ui--hover{
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
     background-color: #000000;
     color: #FFFFFF;
     padding: 10px;
@@ -449,9 +459,11 @@ main{
 
 }
 .text--pp{
-    font-family: "PP Fuji", normal;
+    font-family: 'Heebo', sans-serif;
 }
-
+.bloc--hover{
+    font-family: 'Heebo', sans-serif;
+}
 
 @media (min-width :750px){
     main{
@@ -490,6 +502,7 @@ main{
     .logo{
         flex-direction: row;
         align-items: center;
+        justify-content: center
     }
     
 }
