@@ -511,7 +511,7 @@ main{
 
     
     .title--big{
-        font-size: 85px;
+        font-size: 68px;
         line-height: 90px;
         text-align: left;
     }
@@ -645,7 +645,9 @@ main{
     .link__ui--imp::after{
         right: 73%;
     }
-
+    .logo{
+        justify-content: flex-start;
+    }
 
 }
 
