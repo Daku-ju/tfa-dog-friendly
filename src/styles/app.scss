@@ -15,6 +15,7 @@ body{
 
 }
 
+
 main{
     margin-left: 26px;
     margin-right: 26px;
@@ -60,6 +61,7 @@ main{
 }
 
 .button{
+    font-family: "PP Fuji", normal;
     background-color: #753D00;
     color: #FFF0A3;
     padding: 10px;
@@ -68,7 +70,6 @@ main{
     border-radius: 10px;
     display: block;
     font-size: 21.60px;
-    font-family: "PP Fuji", normal; 
 }
 .button:hover{
     background-color: #000000;
@@ -76,9 +77,9 @@ main{
 }
 
 .link{
+    font-family: "PP Fuji", normal;
     color: black;
     position: relative;
-    font-family: "PP Fuji", normal; 
     font-size: 21.60px;
 }
 
@@ -92,7 +93,7 @@ main{
     width: 19px;
     height: 18.65px;
     right: 7%;
-    top: 27%;
+    top: 35%;
 }
 .link--mvp::after{
     background-repeat: no-repeat;
@@ -245,7 +246,7 @@ main{
 }
 
 .link--footer{
-    padding: 10px;
+    padding: 20px;
     padding-right: 40px;
 }
 
@@ -397,13 +398,13 @@ main{
 }
 .link__ui--normal{
     color: black;
-    font-family: "PP Fuji", normal; 
+    font-family: "PP Fuji", normal;
     font-size: 21.60px;
 }
 .link__ui--imp{
     color: black;
     position: relative;
-    font-family: "PP Fuji", normal; 
+    font-family: "PP Fuji", normal;
     font-size: 21.60px;
 }
 
@@ -423,6 +424,7 @@ main{
     text-decoration: #753D00 underline 4px;
 }
 .button__ui--normal{
+    font-family: "PP Fuji", normal;
     background-color: #753D00;
     color: #FFF0A3;
     padding: 10px;
@@ -431,10 +433,10 @@ main{
     border-radius: 10px;
     display: block;
     font-size: 21.60px;
-    font-family: "PP Fuji", normal; 
-
 }
+
 .button__ui--hover{
+    font-family: "PP Fuji", normal;
     background-color: #000000;
     color: #FFFFFF;
     padding: 10px;
@@ -443,11 +445,11 @@ main{
     border-radius: 10px;
     display: block;
     font-size: 21.60px;
-    font-family: "PP Fuji", normal; 
+    
 
 }
 .text--pp{
-    font-family: "PP Fuji", normal; 
+    font-family: "PP Fuji", normal;
 }
 
 
@@ -475,6 +477,21 @@ main{
     .nav--landing{
         margin-left: 100px;
     }
+    .img__landing{
+        max-width: 600px;
+    }
+    .title--big{
+        max-width: 600px;
+    }
+
+    .block--slogan{
+        top:17%;
+    }
+    .logo{
+        flex-direction: row;
+        align-items: center;
+    }
+    
 }
 
 @media (min-width :1150px){
@@ -564,10 +581,6 @@ main{
         flex-direction: column;
     }
 
-    .logo{
-        flex-direction: row;
-        align-items: center;
-    }
     .list{
         display: flex;
         justify-content: flex-start;
